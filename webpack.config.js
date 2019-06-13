@@ -80,12 +80,7 @@ module.exports = {
       ],
       use: [
         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader',
-          options: {
-            import: true,
-          }
-        },
+        'css-loader?import=true',
         {
           loader: 'postcss-loader',
           options: {
@@ -106,17 +101,7 @@ module.exports = {
       exclude: [
         path.resolve(__dirname, 'node_modules')
       ],
-      use: [
-        {
-          loader: 'file-loader',
-          options: {
-            // name: '[path][name].[ext]',
-            name: 'assets/[name].[ext]',
-            // publicPath: 'assets',
-          },
-        },
-        'url-loader'
-      ],
+      use: ['file-loader?name=assets/[name].[ext]', 'url-loader'],
     },
     ]
   },
