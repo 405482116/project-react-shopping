@@ -10,7 +10,7 @@ export const products = [{
     price: 10000,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('香水1')),
+        img: './' + images.find(img => img.includes('香水1')),
         title: '',
         count: '',
     }
@@ -22,7 +22,7 @@ export const products = [{
     price: 998,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('香水2')),
+        img: './' + images.find(img => img.includes('香水2')),
         title: '',
         count: '',
     }
@@ -33,7 +33,7 @@ export const products = [{
     price: 699,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('香水3')),
+        img: './' + images.find(img => img.includes('香水3')),
         title: '',
         count: '',
     }
@@ -44,7 +44,7 @@ export const products = [{
     price: 799,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('香水4')),
+        img: './' + images.find(img => img.includes('香水4')),
         title: '',
         count: '',
     }
@@ -56,7 +56,7 @@ export const products = [{
     price: 499,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('香水5')),
+        img: './' + images.find(img => img.includes('香水5')),
         title: '',
         count: '',
     }
@@ -68,7 +68,7 @@ export const products = [{
     price: 399,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('鞋子1')),
+        img: './' + images.find(img => img.includes('鞋子1')),
         title: '',
         count: '',
     }
@@ -80,7 +80,7 @@ export const products = [{
     price: 199,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('鞋子2')),
+        img: './' + images.find(img => img.includes('鞋子2')),
         title: '',
         count: '',
     }
@@ -92,7 +92,7 @@ export const products = [{
     price: 299,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('鞋子3')),
+        img: './' + images.find(img => img.includes('鞋子3')),
         title: '',
         count: '',
     }
@@ -104,7 +104,7 @@ export const products = [{
     price: 99,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('鞋子4')),
+        img: './' + images.find(img => img.includes('鞋子4')),
         title: '',
         count: '',
     }
@@ -116,7 +116,7 @@ export const products = [{
     price: 599,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('鞋子5')),
+        img: './' + images.find(img => img.includes('鞋子5')),
         title: '',
         count: '',
     }
@@ -128,7 +128,7 @@ export const products = [{
     price: 3999,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('手机1')),
+        img: './' + images.find(img => img.includes('手机1')),
         title: '',
         count: '',
     }
@@ -140,7 +140,7 @@ export const products = [{
     price: 2999,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('手机2')),
+        img: './' + images.find(img => img.includes('手机2')),
         title: '',
         count: '',
     }
@@ -152,7 +152,7 @@ export const products = [{
     price: 1999,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('手机3')),
+        img: './' + images.find(img => img.includes('手机3')),
         title: '',
         count: '',
     }
@@ -164,7 +164,7 @@ export const products = [{
     price: 5999,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('手机4')),
+        img: './' + images.find(img => img.includes('手机4')),
         title: '',
         count: '',
     }
@@ -176,7 +176,7 @@ export const products = [{
     price: 6999,
     reserve: 50,
     info: {
-        img: images.find(img => img.includes('手机5')),
+        img: './' + images.find(img => img.includes('手机5')),
         title: '',
         count: '',
     }
