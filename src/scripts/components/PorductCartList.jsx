@@ -32,7 +32,6 @@ export default class PorductCartList extends Component {
 
     render() {
         const { productOrders, count } = this.props;
-        debugger;
         return (
             <>
                 <Nav.Link href="#" onClick={this.handleShow}>购物车<Badge variant="light">{count}</Badge></Nav.Link>
