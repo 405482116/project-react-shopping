@@ -11,9 +11,9 @@ const devMode = process.env.NODE_ENV === 'production'
 module.exports = {
   mode: 'development',
   entry: {
-    index: [path.join(__dirname, 'src', 'index')],
-    another: './src/another-module.js',
-    polyfills: './src/polyfills.js',
+    main: [path.join(__dirname, 'src/scripts/', 'main')],
+    // todo: [path.join(__dirname, 'todo', 'index')],
+    polyfills: './src/scripts/polyfills.js',
   },
   // watch: true,
   output: {
@@ -53,7 +53,8 @@ module.exports = {
     rules: [{
       test: /.jsx?$/,
       include: [
-        path.resolve(__dirname, 'src')
+        path.resolve(__dirname, 'src'),
+        // path.resolve(__dirname, 'todo')
       ],
       exclude: [
         path.resolve(__dirname, 'node_modules')
@@ -61,23 +62,24 @@ module.exports = {
       loader: 'babel-loader',
       query: {
         presets: [
-          ["@babel/env", {
+          ["@babel/preset-env", {
             "targets": {
               "browsers": "last 2 chrome versions"
             }
-          }]
+          }],
+          "@babel/preset-react",
         ],
-        plugins: ['@babel/plugin-transform-runtime'],
+        plugins: ['@babel/plugin-transform-runtime', "@babel/plugin-transform-react-constant-elements"],
       }
     },
     {
       test: /\.(sa|sc|c)ss$/,
-      include: [
-        path.resolve(__dirname, 'src')
-      ],
-      exclude: [
-        path.resolve(__dirname, 'node_modules')
-      ],
+      // include: [
+      //   path.resolve(__dirname, 'src')
+      // ],
+      // exclude: [
+      //   path.resolve(__dirname, 'node_modules')
+      // ],
       use: [
         devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
         'css-loader?import=true',
@@ -95,13 +97,13 @@ module.exports = {
     },
     {
       test: /\.(png|jpg|gif)$/,
-      include: [
-        path.resolve(__dirname, 'src')
-      ],
-      exclude: [
-        path.resolve(__dirname, 'node_modules')
-      ],
-      use: ['file-loader?name=assets/[name].[ext]', 'url-loader'],
+      // include: [
+      //   path.resolve(__dirname, 'src')
+      // ],
+      // exclude: [
+      //   path.resolve(__dirname, 'node_modules')
+      // ],
+      use: ['file-loader?name=assets/[name].[ext]&publicPath=/',],
     },
     ]
   },
