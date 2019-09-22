@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .demo {
+            margin: 30px auto;
+            width: 600px;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .example {
+            width: 300px;
+            background-color: #888;
+            text-align: left;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        使用方法：
+        <!-- <p>var row = 2;//需要省略的行数</br>
+			dom.mlellipsis(row);</p> -->
+        <input type="text" id="row" placeholder="输入要省略的行数" />
+        <button onclick="action()">确定</button>
+        <!-- <div class="example">法恩莎发生地方啊是仿盛大发生的地方撒旦法艾丝凡阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬艾丝凡阿斯蒂芬阿斯蒂芬阿斯顿发生发生的发生的发大水暗杀阿斯蒂芬艾丝凡萨芬撒发生发生发生发生的发生的发生范德萨</div> -->
+        <div id="example" class="example">Code-splitting builds on top of native ES modules, like Rollup offers, are an
+            alternative
+            to the
+            Webpack-style
+            chunking approach - offering a way to utilize the native module loader for loading shared and dynamic
+            chunks
+            instead of using a custom registry and loader as Webpack bundles include. Scope-level optimizations can
+            be
+            performed on ES modules when they are combined, while ensuring no duplicate code is loaded through
+            dynamic
+            loading and code-sharing in the module registry, using the features of the native module loader and its
+            dynamic
+            runtime nature.</div>
+    </div>
+</body>
+<!-- <script type="text/javascript">
+    function action() {
+        var row = document.getElementById("row").value;
+        const dom = document.getElementById("example");
+        const customElment = new CustomElment(dom);
+        customElment.textOverflowByRow(row);
+        // const dom = document.querySelector('.example');
+        // resolveTextOverflowByRow(row, dom);
+    }
+</script> -->
+
+</html>
